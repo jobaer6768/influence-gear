@@ -35,6 +35,7 @@ header{
   max-width: 1440px;
   background: var(--default-color);
   padding: 90px 120px;
+  height: 100vh;
 }
 
 /* nav-section starts */
@@ -114,6 +115,53 @@ main{
   background: var(--default-color);
 }
 
+/* cards section starts */
+.collection-title{
+  color: var(--primary-title-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* margin: 30px auto; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card{
+  border-radius: 5px;
+  background: var(--default-color);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.card-extra{
+  padding-right: 60px;
+}
+
+.card-title{
+  color: var(--secondary-title-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.card-price{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+
+.card-description{
+  color: var(--secondary-description-color);
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
 /* Responsive section */
 
 /* mobile devices */
@@ -152,5 +200,13 @@ main{
 
   .logo-container img{
     width: 80%;
+  }
+
+  .cards-container{
+    grid-template-columns: 1fr;
+  }
+
+  .card-extra{
+    padding: 5px;
   }
 }
