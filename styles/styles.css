@@ -210,3 +210,27 @@ main{
     padding: 5px;
   }
 }
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+  header{
+    padding: 35px 22px;
+    text-align: center;
+  }
+
+  .nav-container, 
+  .banner-container
+  {
+    flex-direction: column;
+  }
+
+  .banner-container{
+    margin: 40px 22px;
+    flex-direction: column-reverse;
+  }
+
+  .nav-link{
+    margin-top: 20px;
+    margin-left: 220px;
+  }
+}
