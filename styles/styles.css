@@ -7,6 +7,21 @@
   margin: 0px;
 }
 
+img{
+  width: 100%;
+}
+
+.btn-primary{
+  border-radius: 41px;
+  border: 0;
+  background: #E02C6D;
+  color: var(--default-color);
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* variables */
 :root{
   --primary-title-color: #3A3A3A;
   --default-color: #FFF;
@@ -47,4 +62,30 @@ header{
   color: var(--primary-title-color);
   font-size: 1rem;
   font-weight: 600;
+}
+
+/* banner-section starts */
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.banner-description-container .banner-title{
+  color: var(--primary-title-color);
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+
+.banner-description-container .banner-description{
+  color: var(--primary-title-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 16px auto;
+}
+
+.banner-img-container{
+  background-image: url("../images/Circle design.svg");
+  padding: 30px 30px 30px 2px;
 }
