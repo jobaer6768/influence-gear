@@ -19,6 +19,7 @@ img{
   padding: 10px 24px;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* variables */
@@ -88,4 +89,15 @@ header{
 .banner-img-container{
   background-image: url("../images/Circle design.svg");
   padding: 30px 30px 30px 2px;
+}
+
+/* Logo section starts */
+.logo-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 130px auto;
+}
+
+.logo-container img{
+  width: 85px;
 }
